@@ -6,25 +6,20 @@
 
 ## Date MCP Server (English)
 
-A simple MCP Server that provides the current date.
+A simple MCP Server that provides the current date and time.
 
 ### Features
 
-- **Get Current Date**: Returns today's date in ISO format (YYYY-MM-DD)
-- **Get Formatted Date**: Returns today's date in different formats (ISO, Japanese, US)
+- **Get Current Date and Time**: Returns the current date and time in the specified format and timezone
 
 ## Tools
 
-1. `get_current_date`
-   - Get the current date in ISO format
-   - Inputs: None
-   - Returns: Current date in ISO format (YYYY-MM-DD)
-
-2. `get_formatted_date`
-   - Get the current date in a specified format
+1. `get_now`
+   - Get the current date and time
    - Inputs:
-     - `format` (optional string): Date format preference - 'iso', 'jp', or 'us' (default: "iso")
-   - Returns: Current date in the specified format and the format name
+     - `format` (optional string): Date format - 'ISO' or 'YYYY-MM-DD' (default: "ISO")
+     - `timezone` (optional string): Timezone - 'Asia/Tokyo' or 'UTC' (default: "Asia/Tokyo")
+   - Returns: Current date and time in the specified format and timezone
 
 ## Setup
 
@@ -161,25 +156,20 @@ If you're using Docker, you can configure it like this:
 
 ## Date MCP Server (Japanese)
 
-現在の日付を提供するシンプルなMCPサーバーです。
+現在の日付と時刻を提供するシンプルなMCPサーバーです。
 
 ### 機能
 
-- **現在の日付取得**: 今日の日付をISO形式（YYYY-MM-DD）で返します
-- **フォーマット付き日付取得**: 今日の日付を異なるフォーマット（ISO、日本語、US）で返します
+- **現在の日付と時刻取得**: 指定されたフォーマットとタイムゾーンで現在の日付と時刻を返します
 
 ## ツール
 
-1. `get_current_date`
-   - ISO形式で現在の日付を取得します
-   - 入力パラメータ: なし
-   - 戻り値: ISO形式（YYYY-MM-DD）の現在日付
-
-2. `get_formatted_date`
-   - 指定されたフォーマットで現在の日付を取得します
+1. `get_now`
+   - 現在の日付と時刻を取得します
    - 入力パラメータ:
-     - `format` (任意, 文字列): 日付フォーマット - 'iso', 'jp', または 'us' (デフォルト: "iso")
-   - 戻り値: 指定されたフォーマットでの現在日付とフォーマット名
+     - `format` (任意, 文字列): 日付フォーマット - 'ISO' または 'YYYY-MM-DD' (デフォルト: "ISO")
+     - `timezone` (任意, 文字列): タイムゾーン - 'Asia/Tokyo' または 'UTC' (デフォルト: "Asia/Tokyo")
+   - 戻り値: 指定されたフォーマットとタイムゾーンでの現在の日付と時刻
 
 ## セットアップ
 
