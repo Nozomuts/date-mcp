@@ -1,10 +1,10 @@
 {
-  "name": "datadog-mcp",
+  "name": "date-mcp",
   "version": "1.0.0",
   "description": "",
   "type": "module",
   "bin": {
-    "datadog": "./build/index.js"
+    "date": "./build/index.js"
   },
   "scripts": {
     "build": "tsc && chmod 755 build/index.js"
